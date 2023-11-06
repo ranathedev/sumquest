@@ -92,7 +92,9 @@ const Game = ({
           <OptionNum
             key={i}
             id={i}
-            disabled={isDisabled(i) || gameStatus === 'Lost'}
+            disabled={
+              isDisabled(i) || gameStatus === 'Lost' || gameStatus === 'Won'
+            }
             number={num}
             onPress={addSelectedNum}
           />
