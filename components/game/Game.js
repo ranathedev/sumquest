@@ -45,7 +45,6 @@ const Game = ({
           return 0
         }
       })
-      console.log('Running...')
     }, 1000)
 
     return () => {
